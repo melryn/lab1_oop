@@ -17,7 +17,6 @@ double realNumber(double from = -DBL_MAX/2, double to = DBL_MAX/2) {
 
 }
 
-
 #define MIN_PAPER_SIZE 1.
 #define MAX_PAPER_SIZE 10000.
 #define MIN_T 0.05
@@ -25,7 +24,6 @@ double realNumber(double from = -DBL_MAX/2, double to = DBL_MAX/2) {
 #define MIN_XY -10000.
 #define MAX_XY 10000.
 #define MIN_CNT 0
-
 
 namespace Test
 {
@@ -151,6 +149,7 @@ void assertValidity(PaperStack &object)
         }
     }
 }
+
 void assertEquality(PaperStack &first, PaperStack &second)
 {
     assert(first.count() == second.count());
@@ -274,7 +273,7 @@ void run(){
             Test::assertValidity(randomObject);
         }
 
-    std::cout << "SUCCESSFUL" << std::endl;
+    std::cout << "УРА" << std::endl;
     outputToConsole(defaultPs);
     defaultPs.output("C:\\Study\\test.txt");
     PaperStack newPs;
